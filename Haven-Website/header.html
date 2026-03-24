@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: poppins, sans-serif;
+    
+    }
+
+    .navbar {
+      background-color: #f6f090;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      height: 80px;
+      position: relative;
+      z-index: 1000px;
+    }
+
+    .logo {
+      color: #653a31;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 6px 12px;
+      border: none;
+      background-color: #f6f090;
+    }
+
+    svg {
+      height: 40px;
+      padding-left:60px ;
+      width: 40px;
+    }
+     #check {
+        display: none;
+      }
+
+      .open {
+        font-size: 25px;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 900px;
+        height: 100%;
+        background: #6b3b2e;
+        transition: 0.3s;
+      }
+
+      .sidebar a {
+        display: block;
+        color: #f5e6a8;
+        font-size: 25px;
+        margin-top: 40px;
+        text-align: start;
+        padding-left:  150px;
+        text-decoration: none;
+        
+      }
+
+      .close {
+        position: absolute;
+        bottom:  0px;
+    
+        padding-left: 100px;
+        justify-content: start;
+        font-size: 30px;
+        cursor: pointer;
+        color: #f5e6a8;
+      }
+      #check:checked ~ .sidebar {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Ramen Haven</div>
+
+      <div class="menu">
+        <button>Log In</button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100%"
+          viewBox="0 0 329.7 134.5"
+          data-hook="svg-icon-6"
+        >
+          <path
+            class="ptVJi9"
+            d="M281.6 3c35.7 10.7 56 47.6 45.2 83.3s-47.6 56-83.3 45.2c-35.7-10.7-56-47.6-45.2-83.3C209 13.1 245.9-7.2 281.6 3z"
+          ></path>
+          <text
+            x="265"
+            y="69"
+            dy=".35em"
+            text-anchor="middle"
+            class="uxskpx"
+            data-hook="items-count"
+          >
+            0
+          </text>
+          <path
+            d="M74.1 134.4c-8.7 0-16.2-7.4-16.2-16.2S65.3 102 74.1 102s16.2 7.4 16.2 16.2-7.4 16.2-16.2 16.2zm0-21.7c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6 5.6-2.5 5.6-5.6-2.5-5.6-5.6-5.6zM120.5 134.5c-8.7 0-16.2-7.4-16.2-16.2s7.4-16.2 16.2-16.2 16.2 7.4 16.2 16.2-7.4 16.2-16.2 16.2zm0-21.7c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6c3.1 0 5.6-2.5 5.6-5.6s-2.5-5.6-5.6-5.6z"
+          ></path>
+          <path
+            d="M141.2 92.1L53.5 92.1 23 10.6 0 10.6 0 0 30.4 0 61.2 81.6 133.5 81.6 152.4 30.4 38.5 30.4 34.8 19.9 167.9 19.9z"
+          ></path>
+        </svg>
+
+        <input type="checkbox" id="check" />
+<label for="check" class="open" style="font-size: 22px;">Menu</label>
+
+
+    <div class="sidebar">
+      <label for="check" class="close">✕</label>
+
+      <a href="index.html">Home</a>
+      <a href="Menu.html">Menus</a>
+      <a href="order online.html">Order Online</a>
+      <a href="Location&Hours.html">Location & Hours</a>
+      <a href="About.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        color: #653a31;
+        font-family: poppins, sans-serif;
+      }
+       a{
+      text-decoration: none;
+      color: #653a31;
+    }
+      .navbar {
+        background-color: #f6f090;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+        height: 80px;
+      }
+
+      .logo {
+        color: #653a31;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      button {
+        padding: 6px 12px;
+        border: none;
+        background-color: #f6f090;
+      }
+
+      svg {
+        height: 40px;
+        width: 40px;
+      }
+      .display {
+        display: flex;
+        gap: 300px;
+      }
+
+      .img {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 31px;
+        font-weight: 100;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .part1 {
+        margin-bottom: 30px;
+      }
+
+      .part2 {
+        margin-bottom: 360px;
+      }
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">Ramen Haven</div>
+
+      <div class="menu">
+        <button>Log In</button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100%"
+          viewBox="0 0 329.7 134.5"
+          data-hook="svg-icon-6"
+        >
+          <path
+            class="ptVJi9"
+            d="M281.6 3c35.7 10.7 56 47.6 45.2 83.3s-47.6 56-83.3 45.2c-35.7-10.7-56-47.6-45.2-83.3C209 13.1 245.9-7.2 281.6 3z"
+          ></path>
+          <text
+            x="265"
+            y="69"
+            dy=".35em"
+            text-anchor="middle"
+            class="uxskpx"
+            data-hook="items-count"
+          >
+            0
+          </text>
+          <path
+            d="M74.1 134.4c-8.7 0-16.2-7.4-16.2-16.2S65.3 102 74.1 102s16.2 7.4 16.2 16.2-7.4 16.2-16.2 16.2zm0-21.7c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6 5.6-2.5 5.6-5.6-2.5-5.6-5.6-5.6zM120.5 134.5c-8.7 0-16.2-7.4-16.2-16.2s7.4-16.2 16.2-16.2 16.2 7.4 16.2 16.2-7.4 16.2-16.2 16.2zm0-21.7c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6c3.1 0 5.6-2.5 5.6-5.6s-2.5-5.6-5.6-5.6z"
+          ></path>
+          <path
+            d="M141.2 92.1L53.5 92.1 23 10.6 0 10.6 0 0 30.4 0 61.2 81.6 133.5 81.6 152.4 30.4 38.5 30.4 34.8 19.9 167.9 19.9z"
+          ></path>
+        </svg>
+
+        <a href="#">Menu</a>
+      </div>
+    </div>
+    <div class="display">
+      <img
+        class="img"
+        src="https://static.wixstatic.com/media/88aac0_c0af97d86e26427f88ecd1d6ee6f078d~mv2.png"
+        alt=""
+        style="width: 443px; height: 672px; object-fit: cover"
+      />
+
+      <div class="content">
+        <h1>Visit Us</h1>
+
+        <div class="part1">
+          <p>
+            Come find us at the heart of the city, where every<br />
+            bowl tells a story of tradition and taste.
+          </p>
+        </div>
+
+        <div class="part2">
+          <p>
+            500 Terry Francine Street<br />
+            San Francisco, CA 94158
+          </p>
+        </div>
+
+        <div class="part3">
+          <p style="font-size: 30px">Opening Hours</p>
+          <p>
+            Sat - Sun - Open<br />
+            Mon - Fri - Closed
+          </p>
+        </div>
+      </div>
+    </div>
+      
+    <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  </body>
+</html>

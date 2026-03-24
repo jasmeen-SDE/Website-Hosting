@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      #check {
+        display: none;
+      }
+
+      .open {
+        font-size: 25px;
+        padding: 10px;
+        cursor: pointer;
+
+        position: fixed;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 500px;
+        height: 100%;
+        background: #6b3b2e;
+        text-align: center;
+        padding-top: 60px;
+      }
+
+      .sidebar a {
+        display: block;
+        color: #f5e6a8;
+        font-size: 25px;
+        padding: 15px;
+        text-decoration: none;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #f5e6a8;
+      }
+      #check:checked ~ .sidebar {
+        left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input type="checkbox" id="check" />
+
+    <label for="check" class="open">Menu</label>
+
+    <div class="sidebar">
+      <label for="check" class="close">✕</label>
+
+      <a href="index.html">Home</a>
+      <a href="Menu.html">Menus</a>
+      <a href="order online.html">Order Online</a>
+      <a href="Location&Hours.html">Location & Hours</a>
+      <a href="About.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </body>
+</html>

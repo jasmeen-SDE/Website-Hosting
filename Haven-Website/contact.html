@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: poppins, sans-serif;
+      background-color: #f6f090;
+    }
+    .navbar {
+      background-color: #f6f090;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      height: 80px;
+    }
+
+    .logo {
+      color: #653a31;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 6px 12px;
+      border: none;
+      background-color: #f6f090;
+    }
+
+    svg {
+      height: 40px;
+      width: 40px;
+    }
+    .box {
+      display: flex;
+    }
+    .hero {
+      background-image: url("https://static.wixstatic.com/media/88aac0_61a8fcba5ac34b658602abe34060b3d5~mv2.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
+      margin-left: 50px;
+      margin-top: 50px;
+      width: 600px;
+      height: 851px;
+    }
+
+    .textbox {
+      background: #f6f090;
+      padding: 35px;
+      width: 350px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .textbox h1 {
+      margin-top: 0;
+      padding-bottom: 40px;
+      font-size: 60px;
+      font-weight: 100;
+    }
+    .contact {
+      margin-left: 250px;
+      margin-top: 210px;
+    }
+    input {
+      padding: 8px 2px 8px 2px;
+      width: 500px;
+
+      height: 30px;
+      background-color: #f6f090;
+      margin-bottom: 30px;
+    }
+    input:hover {
+      background-color: white;
+    }
+     a{
+      text-decoration: none;
+      color: #653a31;
+    }
+    .contact button {
+      background-color: #653a31;
+      color: #f6f090;
+      padding: 11px 15px;
+      width: 500px;
+      font-size: 22px;
+      height: 50px;
+      border-radius: 25px;
+    }
+    .contact button:hover {
+      background-color: #f6f090;
+      color: #653a31;
+    }
+    .footer {
+      background: #f6f090;
+      padding: 60px;
+      margin-top: 60px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer h1 {
+      color: #653a31;
+    }
+
+    .links p {
+      margin: 6px 0;
+    }
+
+    .copy {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <div class="logo">Ramen Haven</div>
+
+      <div class="menu">
+        <button>Log In</button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100%"
+          viewBox="0 0 329.7 134.5"
+          data-hook="svg-icon-6"
+        >
+          <path
+            class="ptVJi9"
+            d="M281.6 3c35.7 10.7 56 47.6 45.2 83.3s-47.6 56-83.3 45.2c-35.7-10.7-56-47.6-45.2-83.3C209 13.1 245.9-7.2 281.6 3z"
+          ></path>
+          <text
+            x="265"
+            y="69"
+            dy=".35em"
+            text-anchor="middle"
+            class="uxskpx"
+            data-hook="items-count"
+          >
+            0
+          </text>
+          <path
+            d="M74.1 134.4c-8.7 0-16.2-7.4-16.2-16.2S65.3 102 74.1 102s16.2 7.4 16.2 16.2-7.4 16.2-16.2 16.2zm0-21.7c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6 5.6-2.5 5.6-5.6-2.5-5.6-5.6-5.6zM120.5 134.5c-8.7 0-16.2-7.4-16.2-16.2s7.4-16.2 16.2-16.2 16.2 7.4 16.2 16.2-7.4 16.2-16.2 16.2zm0-21.7c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6c3.1 0 5.6-2.5 5.6-5.6s-2.5-5.6-5.6-5.6z"
+          ></path>
+          <path
+            d="M141.2 92.1L53.5 92.1 23 10.6 0 10.6 0 0 30.4 0 61.2 81.6 133.5 81.6 152.4 30.4 38.5 30.4 34.8 19.9 167.9 19.9z"
+          ></path>
+        </svg>
+
+        <a href="#">Menu</a>
+      </div>
+    </div>
+    <div class="box">
+      <section class="hero">
+        <div class="textbox">
+          <h1>Get in Touch</h1>
+          <p>
+            Reach out to us for any inquiries or reservations. We're here to
+            make your ramen experience memorable
+          </p>
+        </div>
+      </section>
+
+      <div class="contact">
+        <label> First Name * </label>
+        <br />
+        <input type="text" />
+        <br />
+        <label> Last Name * </label>
+        <br />
+        <input type="text" />
+        <br />
+        <label> Email* </label>
+        <br />
+        <input type="email" />
+        <br />
+        <label> Phone </label>
+        <br />
+        <input type="number" />
+        <br />
+        <label> Message </label>
+        <br />
+        <input type="textarea" />
+        <br />
+        <button>submit</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div>
+          <h1>Ramen Haven</h1>
+        </div>
+
+        <div>
+          <p>123-456-7890</p>
+          <p>info@mysite.com</p>
+          <p>500 Terry Francine St. San Francisco, CA</p>
+
+          <div class="links">
+            <p>Privacy Policy</p>
+            <p>Accessibility Statement</p>
+            <p>Terms & Conditions</p>
+            <p>Refund Policy</p>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <p class="copy">© 2035 by Ramen Haven. Powered by Wix</p>
+    </footer>
+  </body>
+</html>
